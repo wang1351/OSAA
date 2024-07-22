@@ -3,7 +3,7 @@ This is the PyTorch implementation of manuscript 'Overcoming Negative Transfer b
 
 
 ## Architecture of Re2LLM
-![image](./Distant Domain Transfer0721.pdf)
+![image](./OSAA.png)
 
 ## Packages to be installed
 '''
