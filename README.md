@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/bcf619fc-d8b4-4a60-a518-d8109d6f5f46)# OSAA
+# OSAA
 This is the PyTorch implementation of manuscript 'Overcoming Negative Transfer by Online Selection: Distant Domain Adaptation for Fault Diagnosis'
 
 
