@@ -110,7 +110,7 @@ class cross_domain_trainer(object):
 
             for run_id in range(self.num_runs):  # specify number of consecutive runs
                 # fixing random seed
-                #fix_randomness(run_id)
+                fix_randomness(run_id)
 
                 # Logging
                 self.logger, self.scenario_log_dir = starting_logs(self.dataset, self.da_method, self.exp_log_dir,
