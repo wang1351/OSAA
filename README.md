@@ -22,7 +22,7 @@ pip install openpyxl
 cd OSAA
 mkdir PU
 ```
-Download the data from  and put them into folder PU
+Download the data from https://drive.google.com/file/d/1a0StnzWNabPyVAUMPax-R3mEYlPUXkS9/view?usp=sharing and put them into folder PU
 
 
 ## Training
