@@ -6,7 +6,7 @@ This is the PyTorch implementation of manuscript 'Overcoming Negative Transfer b
 ![image](./OSAA.png)
 
 ## Packages to be installed
-'''
+```
 pip install torch
 pip install torchvision
 pip install matplotlib
@@ -15,7 +15,7 @@ pip install pandas
 pip install scorch
 pip install wandb -U
 pip install openpyxl
-'''
+```
 
 
 
