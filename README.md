@@ -17,6 +17,12 @@ pip install wandb -U
 pip install openpyxl
 ```
 
+## Training
+```
+cd OSAA
+mkdir PU
+```
+Download the data from  and put them into folder PU
 
 
 ## Training
