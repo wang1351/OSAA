@@ -60,6 +60,7 @@ class DISTANT(Algorithm):
             weight_decay=hparams["weight_decay"]
         )
         self.criterion_cond = ConditionalEntropyLoss().cuda()
+        self.numclass = configs.num_classes
         
     def update(self, src_x, src_y, inter_x, trg_x, ep, len_dataloader):
         src_h, src_indlist = self.feature_extractor(src_x)
@@ -108,7 +109,7 @@ class DISTANT(Algorithm):
 
         domain_loss = self.cross_entropy(disc_prediction, domain_label_concat)
         src_clasloss = self.cross_entropy(src_pred, src_y)
-        src_clasloss_threshold = - torch.mul(nn.functional.softmax(src_pred),nn.functional.one_hot(src_y,3)).sum(-1)
+        src_clasloss_threshold = - torch.mul(nn.functional.softmax(src_pred),nn.functional.one_hot(src_y,self.numclass)).sum(-1)
 
         inter_prob = nn.functional.softmax(inter_pred, dim=1)
         inter_entropy = - torch.mul(inter_prob,torch.log(inter_prob)).sum(-1)
