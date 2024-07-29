@@ -3,7 +3,7 @@ This is the PyTorch implementation of manuscript 'Overcoming Negative Transfer b
 
 
 ## Architecture of OSAA
-
+![image](./OSAA_new.png)
 
 ## Packages to be installed
 ```
