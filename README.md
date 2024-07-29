@@ -22,7 +22,8 @@ pip install openpyxl
 cd OSAA
 mkdir PU
 ```
-Download the data from https://drive.google.com/file/d/1a0StnzWNabPyVAUMPax-R3mEYlPUXkS9/view?usp=sharing and put them into folder PU
+Download the data from https://drive.google.com/file/d/1a0StnzWNabPyVAUMPax-R3mEYlPUXkS9/view?usp=sharing and put them into folder PU (parallel to main.py)
+Download the data from https://drive.google.com/file/d/1Urp5AzZi79hs-u0_wJOIlQHvB070q6Ag/view?usp=sharing and put them into folder CWRU
 
 
 ## Training
@@ -35,6 +36,11 @@ Download the data from https://drive.google.com/file/d/1a0StnzWNabPyVAUMPax-R3mE
 
 ```
 python main.py
+```
+
+An example is 
+```
+python main.py --dataset PU --experiment_description test
 ```
 
 
