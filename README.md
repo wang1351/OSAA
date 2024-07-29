@@ -23,8 +23,10 @@ cd OSAA
 mkdir PU
 mkdir CWRU
 ```
-Download the data from https://drive.google.com/file/d/1a0StnzWNabPyVAUMPax-R3mEYlPUXkS9/view?usp=sharing and put them into folder PU (parallel to main.py)
-Download the data from https://drive.google.com/file/d/1Urp5AzZi79hs-u0_wJOIlQHvB070q6Ag/view?usp=sharing and put them into folder CWRU
+Download from https://drive.google.com/file/d/1a0StnzWNabPyVAUMPax-R3mEYlPUXkS9/view?usp=sharing and put them into folder PU (parallel to main.py)
+
+
+Download from https://drive.google.com/file/d/1Urp5AzZi79hs-u0_wJOIlQHvB070q6Ag/view?usp=sharing and put them into folder CWRU
 
 
 ## Training
