@@ -131,17 +131,14 @@ class cross_domain_trainer(object):
                 # Average meters
                 loss_avg_meters = collections.defaultdict(lambda: AverageMeter())
 
-                # training..
-                #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!aaa define first
+
                 for epoch in range(1, self.hparams["num_epochs"] + 1):
-                    # print(time.time()-aaa)
-                    # aaa = time.time()
+
                     joint_loaders = enumerate(zip(self.src_train_dl, self.inter_dl, self.trg_train_dl))
                     len_dataloader = min(len(self.src_train_dl), len(self.inter_dl), len(self.trg_train_dl))
                     algorithm.train()
 
                     for step, ((src_x, src_y), (inter_x),  (trg_x, _)) in joint_loaders:
-                      #  pdb.set_trace()
                         src_x, src_y, inter_x, trg_x = src_x.float().to(self.device), src_y.long().to(self.device), inter_x[0].float().to(self.device), trg_x.float().to(self.device)
                         if self.da_method == "DANN" or self.da_method == "DIFFDANN" or self.da_method == "CoDATS" :
                             losses = algorithm.update(src_x, src_y, trg_x, step, epoch, len_dataloader)
