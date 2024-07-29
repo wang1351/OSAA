@@ -91,7 +91,8 @@ class CNNDecoder(nn.Module):
         
         self.pool1 = nn.MaxUnpool1d(kernel_size=2, stride=2, padding=0)
 
-        self.expand = nn.Linear(1, 640) #5120: 640 1024:128
+
+        self.expand = nn.Linear(1, configs.decodersize) #5120: 640 1024:128
 
     def forward(self, x_in, indlist):
         ind1, ind2, ind3 = indlist
